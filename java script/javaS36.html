@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>java35</title>
+    <script type="text/javascript">
+        var pancere;
+        function pencereac() {
+            pencere = window.open("", "pencere", "width = 400, height = 300, top = 0, left = 200, scrollbar = no");
+
+            pencere.document.write("<html><head><title>yeni pencere</title></head><body bgcolor='#ffffc1' text='#ce4300'>");
+
+            pencere.document.write("<center><h3>3 saniye sonra kapanacak</h3></center></body></html>");
+
+            setTimeout("pencerekapat()", 3000);
+        }
+
+        function pencerekapat() {
+            pencere.close();
+        }
+    </script>
+</head>
+
+<body>
+    <a href="#" onclick="pencereac()">pencere ac</a>
+</body>
+
+</html>

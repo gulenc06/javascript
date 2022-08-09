@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <title>java24</title>
+    <script type="text/javascript">
+        function olusur() {
+            document.getElementById("kutu").style.width = document.getElementById("genis").value + "px";
+
+            document.getElementById("kutu").style.height = document.getElementById("yuksek").value + "px";
+
+            document.getElementById("kutu").style.borderWidth = document.getElementById("kalın").value;
+
+            document.getElementById("kutu").style.borderStyle = document.getElementById("tipi").value;
+
+            document.getElementById("kutu").style.borderColor = document.getElementById("renk").value;
+
+            document.getElementById("kutu").style.backgroundColor = document.getElementById("arka").value;
+
+            document.getElementById("kutu").style.borderRadius = document.getElementById("oval").value;
+        }
+    </script>
+</head>
+
+<body>
+    <form method="get">
+        <table>
+            <tr>
+                <td width="200" height="30">genişlik</td>
+                <td width="300">
+                    <input id="genis" name="" type="text" />
+                </td>
+            </tr>
+
+            <tr>
+                <td width="200" height="30">yükseklik</td>
+                <td width="300">
+                    <input id="yuksek" name="" type="text" />
+                </td>
+            </tr>
+
+            <tr>
+                <td width="200" height="30">kenar kalınlığı</td>
+                <td width="300">
+                    <select id="kalın">
+                        <option value="1px">1px</option>
+                        <option value="2px">2px</option>
+                        <option value="3px">3px</option>
+                        <option value="4px">4px</option>
+                        <option value="5px">5px</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="200" height="30">kenar tipi</td>
+                <td width="300">
+                    <select id="tipi">
+                        <option value="solid">solid</option>
+                        <option value="dotted">dotted</option>
+                        <option value="dashed">dashed</option>
+                        <option value="duble">duble</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td height="30">kenarlık rengi</td>
+                <td>
+                    <select id="renk" name="">
+                        <option value="#f00">kırmızı</option>
+                        <option value="#00f">mavi</option>
+                        <option value="#0f0">yelşil</option>
+                        <option value="#000">siyah</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="200" height="30">arka plan rengi</td>
+                <td width="300">
+                    <select id="arka">
+                        <option value="#f00">kırmızı</option>
+                        <option value="#00f">mavi</option>
+                        <option value="#0f0">yelşil</option>
+                        <option value="#000">siyah</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="200" height="30">ovallik</td>
+                <td width="300">
+                    <select id="oval">
+                        <option value="3px">3px</option>
+                        <option value="5px">5px</option>
+                        <option value="10px">10px</option>
+                        <option value="15px">15px</option>
+
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="200" height="30"></td>
+                <td width="300">
+                    <input type="button" value="oluştur" onclick="olusur()">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div id="kutu"></div>
+
+</body>
+
+</html>

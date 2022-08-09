@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+<script type="text/javascript">
+    function odak(x) {
+        document.getElementById(x).style.backgroundColor = "yellow";
+        document.getElementById(x).style.color = "red";
+    }
+
+    function terk(x) {
+        document.getElementById(x).style.backgroundColor = "#fff";
+        document.getElementById(x).style.color = "#000";
+    }
+</script>
+
+<body>
+    <form method="get">
+        <textarea rows="10" cols="60" id="cok" onfocus="odak(this.id)" onblur="terk(this.id)">
+        </textarea>
+        <br><br>
+        <input type="text" id="az" onfocus="odak(this.id)" onblur="terk(this.id)">
+    </form>
+</body>
+
+</html>

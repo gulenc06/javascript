@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>java39</title>
+    <style type="text/css">
+        #silerderüst {
+            width: 715px;
+            height: 402px;
+        }
+
+        #silerderalt {
+            width: 715px;
+            height: 49px;
+            background: #000;
+        }
+
+        #ic {
+            width: 405px;
+            height: 49px;
+            margin: 0 auto;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            float: left;
+            display: block;
+            width: 40px;
+            height: 49px;
+            font: bold 18px arial;
+            color: #fff;
+            text-align: center;
+            line-height: 49px;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background: #f00;
+        }
+    </style>
+    <script type="text/javascript">
+        var resimler = new Array(
+            "",
+            "url(images/1.jpg)",
+            "url(images/2.jpg)",
+            "url(images/3.jpg)",
+            "url(images/4.jpg)",
+            "url(images/5.jpg)",
+            "url(images/6.jpg)",
+            "url(images/7.jpg)",
+            "url(images/8.jpg)",
+            "url(images/9.jpg)",
+            "url(images/10.jpg)"
+        );
+        function degis(x) {
+            document.getElementById("silerderüst").style.background = resimler[x]
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="silerderüst"></div>
+    <div id="silerderalt">
+        <div id="ic">
+            <ul>
+                <li id="1" onmouseover="degis(1)">1</li>
+                <li id="2" onmouseover="degis(2)">2</li>
+                <li id="3" onmouseover="degis(3)">3</li>
+                <li id="4" onmouseover="degis(4)">4</li>
+                <li id="5" onmouseover="degis(5)">5</li>
+                <li id="6" onmouseover="degis(6)">6</li>
+                <li id="7" onmouseover="degis(7)">7</li>
+                <li id="8" onmouseover="degis(8)">8</li>
+                <li id="9" onmouseover="degis(9)">9</li>
+                <li id="10" onmouseover="degis(10)">10</li>
+        </div>
+        </ul>
+    </div>
+</body>
+
+</html>

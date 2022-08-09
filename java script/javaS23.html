@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>java23</title>
+    <style type="text/css">
+        #discerceve {
+            width: 400px;
+            border: 4px solid #59f;
+            padding: 5px;
+        }
+
+        #iccerceve {
+            width: 378px;
+            border: 1px solid #59f;
+            padding: 10px;
+            font: bold 12px tahoma;
+            color: #606060;
+        }
+    </style>
+    <script type="text/javascript">
+        var istiklalmarsi = "<h3 style='text-align:center'>İSTİKLAL MARŞI</h3>Korkma, sönmez bu şafaklarda yüzen al sancak <br>Sönmeden yurdumun üstünde tüten en so ocak<br> O benim milletimin yıldızıdır, parlayacak,<br> o benimdir o benim milletimindir ancak.<br><br>Çatma, kurban olayım çehreni ey nazlı hilâl!<br>Kahraman ırkıma bir gül… ne bu şiddet bu celâl ?<br>Sana olmaz dökülen kanlarımız sonra helâl,<br> Hakkıdır, Hakk’a tapan, milletimin istiklâl ";
+
+
+        function goster() {
+            document.getElementById("iccerceve").innerHTML = istiklalmarsi
+        }
+
+        function gizle() {
+            document.getElementById("iccerceve").innerHTML = "";
+        }
+
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="button" value="istiklal marşını göster" onclick="goster()">
+        <input type="button" value="istiklal marşını gizle" onclick="gizle()">
+    </form>
+    <br><br><br>
+
+    <div id="discerceve">
+        <div id="iccerceve"></div>
+    </div>
+</body>
+
+</html>

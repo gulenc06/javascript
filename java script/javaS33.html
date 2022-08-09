@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>java33</title>
+    <script type="text/javascript">
+        function gönder() {
+            var adal = document.getElementById("ad").value;
+            var mailal = document.getElementById("mail").value;
+            var sifreal = document.getElementById("şifre").value;
+            var tcal = document.getElementById("tc").value;
+
+            if (adal == "") {
+                document.getElementById("aduyari").innerHTML = "bu alan grerekli";
+                document.getElementById("aduyari").style.color = "#f00";
+            }
+
+            if (mailal == "") {
+                document.getElementById("mailuyari").innerHTML = "bu alan grerekli";
+                document.getElementById("mailuyari").style.color = "red";
+            }
+
+            if (sifreal == "") {
+                document.getElementById("sifreuyari").innerHTML = "bu alan grerekli";
+                document.getElementById("sifreuyari").style.color = "red";
+            }
+
+            if (tcal == "") {
+                document.getElementById("tcuyari").innerHTML = "bu alan grerekli";
+                document.getElementById("tcuyari").style.color = "red";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form method="get">
+        <table>
+            <tr>
+                <td width="150"> adı soyadı</td>
+                <td width="150"><input type="text" id="ad"></td>
+                <td><span id="aduyari"></span></td>
+            </tr>
+            <tr>
+                <td>e-mail</td>
+                <td><input type="text" id="mail"></td>
+                <td width="350"><span id="mailuyari"></span></td>
+            </tr>
+            <tr>
+                <td>şifre</td>
+                <td><input type="password" id="şifre"></td>
+                <td><span id="sifreuyari"></span></td>
+            </tr>
+            <tr>
+                <td>tc no</td>
+                <td><input type="text" id="tc"></td>
+                <td><span id="tcuyari"></span></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="gönder" onclick="gönder()"></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

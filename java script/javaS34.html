@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>java34</title>
+    <script type="text/javascript">
+        function pencere() {
+            window.open("http://www.google.com ", "pencee", "width=1000,height=600 ,top=0,left=200, scrollbar=no");
+        }
+
+        var pancere;
+        function pencereac() {
+            pencere = window.open("", "pencere", "width = 400, height = 300, top = 0, left = 200, scrollbar = no");
+
+            pencere.document.write("<html><head><title>yeni pencere</title></head><body bgcolor='#ffffc1' text='#ce4300'>");
+
+            pencere.document.write("<center><h3>merhaba</h3></center></body></html>");
+        }
+
+        function pencerekapat() {
+            pencere.close();
+        }
+    </script>
+</head>
+
+<body>
+    <a href="" onclick="pencere()">penceereyi aç</a><br />
+    <a href="" onclick="pencereac()">pencere ac</a><br />
+    <a href="" onclick="pencerekapat()">pencere kapa</a>
+</body>
+
+</html>
